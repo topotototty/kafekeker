@@ -1,0 +1,17 @@
+C:\Users\topot\source\repos\ULTRA2006_EDITION_KafeKeker\ULTRA2006_EDITION_KafeKeker\bin\Debug\net6.0\ULTRA2006_EDITION_KafeKeker.exe
+C:\Users\topot\source\repos\ULTRA2006_EDITION_KafeKeker\ULTRA2006_EDITION_KafeKeker\bin\Debug\net6.0\ULTRA2006_EDITION_KafeKeker.deps.json
+C:\Users\topot\source\repos\ULTRA2006_EDITION_KafeKeker\ULTRA2006_EDITION_KafeKeker\bin\Debug\net6.0\ULTRA2006_EDITION_KafeKeker.runtimeconfig.json
+C:\Users\topot\source\repos\ULTRA2006_EDITION_KafeKeker\ULTRA2006_EDITION_KafeKeker\bin\Debug\net6.0\ULTRA2006_EDITION_KafeKeker.dll
+C:\Users\topot\source\repos\ULTRA2006_EDITION_KafeKeker\ULTRA2006_EDITION_KafeKeker\bin\Debug\net6.0\ULTRA2006_EDITION_KafeKeker.pdb
+C:\Users\topot\source\repos\ULTRA2006_EDITION_KafeKeker\ULTRA2006_EDITION_KafeKeker\obj\Debug\net6.0\ULTRA2006_EDITION_KafeKeker.csproj.AssemblyReference.cache
+C:\Users\topot\source\repos\ULTRA2006_EDITION_KafeKeker\ULTRA2006_EDITION_KafeKeker\obj\Debug\net6.0\ULTRA2006_EDITION_KafeKeker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\topot\source\repos\ULTRA2006_EDITION_KafeKeker\ULTRA2006_EDITION_KafeKeker\obj\Debug\net6.0\ULTRA2006_EDITION_KafeKeker.AssemblyInfoInputs.cache
+C:\Users\topot\source\repos\ULTRA2006_EDITION_KafeKeker\ULTRA2006_EDITION_KafeKeker\obj\Debug\net6.0\ULTRA2006_EDITION_KafeKeker.AssemblyInfo.cs
+C:\Users\topot\source\repos\ULTRA2006_EDITION_KafeKeker\ULTRA2006_EDITION_KafeKeker\obj\Debug\net6.0\ULTRA2006_EDITION_KafeKeker.csproj.CoreCompileInputs.cache
+C:\Users\topot\source\repos\ULTRA2006_EDITION_KafeKeker\ULTRA2006_EDITION_KafeKeker\obj\Debug\net6.0\ULTRA2006_EDITION_KafeKeker.dll
+C:\Users\topot\source\repos\ULTRA2006_EDITION_KafeKeker\ULTRA2006_EDITION_KafeKeker\obj\Debug\net6.0\refint\ULTRA2006_EDITION_KafeKeker.dll
+C:\Users\topot\source\repos\ULTRA2006_EDITION_KafeKeker\ULTRA2006_EDITION_KafeKeker\obj\Debug\net6.0\ULTRA2006_EDITION_KafeKeker.pdb
+C:\Users\topot\source\repos\ULTRA2006_EDITION_KafeKeker\ULTRA2006_EDITION_KafeKeker\obj\Debug\net6.0\ULTRA2006_EDITION_KafeKeker.genruntimeconfig.cache
+C:\Users\topot\source\repos\ULTRA2006_EDITION_KafeKeker\ULTRA2006_EDITION_KafeKeker\obj\Debug\net6.0\ref\ULTRA2006_EDITION_KafeKeker.dll
+C:\Users\topot\source\repos\ULTRA2006_EDITION_KafeKeker\ULTRA2006_EDITION_KafeKeker\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\topot\source\repos\ULTRA2006_EDITION_KafeKeker\ULTRA2006_EDITION_KafeKeker\obj\Debug\net6.0\ULTRA2006_EDITION_KafeKeker.csproj.CopyComplete
