@@ -8,6 +8,6 @@ namespace ULTRA2006_EDITION_KafeKeker
 {
     internal class Cashier
     {
-
+       
     }
 }

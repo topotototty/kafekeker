@@ -12,6 +12,7 @@ namespace ULTRA2006_EDITION_KafeKeker
         static int selection = 0;
         public string login;
         public string password;
+        List<string> PasswordChars = new List<string>();
         public void Menu()
         {
             Console.SetCursorPosition(45, 0);
@@ -25,7 +26,7 @@ namespace ULTRA2006_EDITION_KafeKeker
 
             Console.SetCursorPosition(0, 2);
             Console.WriteLine("  Логин: ");
-            Console.WriteLine("  Пароль: ");
+            Console.WriteLine("  Пароль: "); 
             Console.WriteLine("  Авторизоваться");
 
             while (true)
@@ -59,15 +60,30 @@ namespace ULTRA2006_EDITION_KafeKeker
                         {
                             Console.SetCursorPosition(10, 3);
 
+                            PasswordChars = new List<string>();
+                            Console.SetCursorPosition(14, 3);
+                            Console.WriteLine("                            ");
+                            Console.SetCursorPosition(14, 3);
                             while (true)
                             {
-                                var key_star = Console.ReadKey(true);
+                                ConsoleKeyInfo key = Console.ReadKey(true);
+                                if (key.Key == ConsoleKey.Enter) break;
 
-                                if (key_star.Key == ConsoleKey.Enter) break;
-
-                                Console.Write("*");
-                                password += key_star.KeyChar;
+                                if (key.Key == ConsoleKey.Backspace)
+                                {
+                                    if (PasswordChars.Count > 0)
+                                    {
+                                        PasswordChars.RemoveAt(PasswordChars.Count - 1);
+                                        Console.Write("\b \b");
+                                    }
+                                }
+                                else if (key.KeyChar != '\u0000')
+                                {
+                                    PasswordChars.Add(key.KeyChar.ToString());
+                                    Console.Write("*");
+                                }
                             }
+                            password = string.Join("", PasswordChars);
                         }
 
                         if (selection == 2)
@@ -78,8 +94,6 @@ namespace ULTRA2006_EDITION_KafeKeker
                             {
                                 Console.WriteLine("Введите данные");
                             }
-
-
                         }
                         break;
                 }

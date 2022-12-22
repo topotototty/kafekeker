@@ -24,6 +24,6 @@ namespace ULTRA2006_EDITION_KafeKeker
         {
             throw new NotImplementedException();
         }
-
+        
     }
 }

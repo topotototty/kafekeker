@@ -18,8 +18,8 @@ namespace ULTRA2006_EDITION_KafeKeker
             {
                 if (user.Login != login || user.Password != password)
                 {
-                    Console.WriteLine("  Такого пользователя не существует");
-                    Thread.Sleep(2000);
+                    Console.WriteLine("  Такого пользователя не существует  ");
+                    Thread.Sleep(1000);
 
                     Console.Clear();
                     Main_Menu menu = new Main_Menu();
@@ -43,7 +43,8 @@ namespace ULTRA2006_EDITION_KafeKeker
                             break;
 
                         case (int)Role.Accountant:
-
+                            Accountant accountant = new Accountant();
+                            accountant.Accountant_Menu();
                             break;
 
                         case (int)Role.Cashier:

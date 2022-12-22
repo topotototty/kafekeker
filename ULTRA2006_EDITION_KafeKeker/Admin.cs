@@ -647,7 +647,7 @@ namespace ULTRA2006_EDITION_KafeKeker
                                             Thread.Sleep(1000);
                                             Console.SetCursorPosition(2, 2);
                                             Console.ResetColor();
-                                            Console.Write("Логин пользователя:                                                                         ");
+                                            Console.Write("Логин пользователя:                                                               ");
                                             Console.SetCursorPosition(22, 2);
                                             isCorrect = false;
                                             break;
@@ -799,7 +799,8 @@ namespace ULTRA2006_EDITION_KafeKeker
                         break;
 
                     case ConsoleKey.Escape:
-                        Admin_Menu();
+                        Main_Menu menu = new Main_Menu();
+                        menu.Menu();
                         break;
                 }
             }

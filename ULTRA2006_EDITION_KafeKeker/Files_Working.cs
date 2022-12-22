@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace ULTRA2006_EDITION_KafeKeker
 {
@@ -11,18 +12,19 @@ namespace ULTRA2006_EDITION_KafeKeker
     {
         static public void SaveToFile<T>(T list, string path)
         {
-            if (!File.Exists(path))
-            {
-                FileStream fileStream = File.Create(path);
+            if (!File.Exists(Environment.SystemDirectory + "/" + path))
+            { 
+                FileStream fileStream = File.Create(Environment.SystemDirectory + "/" + path);
                 fileStream.Dispose();
             }
 
             string json = JsonConvert.SerializeObject(list);
-            File.WriteAllText(path, json);
+            File.WriteAllText(Environment.SystemDirectory + "/" + path, json);
         }
 
         static public List<User> ReadUsersFromFile()
         {
+
             List<User> users;
             if (!File.Exists("Users.json"))
             {
@@ -43,21 +45,20 @@ namespace ULTRA2006_EDITION_KafeKeker
 
         static public List<Transaction> ReadFromFile(string path)
         {
-            path = "transaction.json";
-
+            path = "transactions.json";
             List<Transaction> transactions;
 
-            transactions = new List<Transaction>();
-            transactions.Add(new Transaction(0, "fhgbdhrg", 12345, DateTime.Now, true));
-            SaveToFile(transactions, "transaction.json");
-
-            if (!File.Exists(path))
+            if (!File.Exists(Environment.SystemDirectory + "/" + path))
             {
-                FileStream fileStream = File.Create(path);
+                FileStream fileStream = File.Create(Environment.SystemDirectory + "/" + path);
                 fileStream.Dispose();
 
+                transactions = new List<Transaction>();
+                transactions.Add(new Transaction(0, "0", 0, DateTime.Now, "+"));
+                Files_Working.SaveToFile(transactions, "transactions.json");
             }
-            string resultInfo = File.ReadAllText(path);
+
+            string resultInfo = File.ReadAllText(Environment.SystemDirectory + "/" + path);
             transactions = JsonConvert.DeserializeObject<List<Transaction>>(resultInfo);
 
             return transactions;
